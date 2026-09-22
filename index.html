@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal portfolio website of Grant Canzonire, Information Systems & Analytics student at Louisiana State University (LSU).">
   <title>Grant Canzonire | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,14 +33,38 @@
     <!-- Section: Profile / About Me -->
     <section id="about" class="hero-section" aria-labelledby="profile-heading">
       <div class="hero-card">
-        <span class="hero-tag">ISDS 3100 &bull; Personal Portfolio</span>
+        <div class="hero-top-row">
+          <span class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            ISDS 3100 &bull; Personal Portfolio
+          </span>
+          <span class="brand-badge">LSU &bull; Class of 2027</span>
+        </div>
+
         <h1 id="profile-heading" class="hero-title">Grant Canzonire</h1>
-        <p class="hero-subtitle">Information Systems &amp; Analytics &bull; Cybersecurity Interest</p>
+
+        <div class="hero-pills">
+          <span class="hero-pill-major">Information Systems &amp; Analytics</span>
+          <span style="color: var(--text-light);">&bull;</span>
+          <span class="hero-pill-focus">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            Cybersecurity Interest
+          </span>
+        </div>
+
         <p class="hero-description">
           I am an Information Systems &amp; Analytics student at Louisiana State University (LSU) graduating in 2027 with an interest in cybersecurity. I enjoy troubleshooting problems and learning how technology and information systems work.
         </p>
+
         <div class="hero-actions">
-          <a href="resume.html" class="btn btn-primary">View Full Resume</a>
+          <a href="resume.html" class="btn btn-primary">
+            View Full Resume
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
           <a href="project.html" class="btn btn-secondary">Explore Projects</a>
           <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
@@ -51,12 +78,58 @@
         <p class="section-subtitle">Key competencies in technology, operations, and service.</p>
       </div>
 
-      <div class="card">
-        <div class="skill-tags" style="gap: 0.75rem;">
-          <span class="skill-tag" style="font-size: 0.95rem; padding: 0.5rem 1rem;">Microsoft Excel</span>
-          <span class="skill-tag" style="font-size: 0.95rem; padding: 0.5rem 1rem;">Troubleshooting</span>
-          <span class="skill-tag" style="font-size: 0.95rem; padding: 0.5rem 1rem;">Customer Service</span>
-          <span class="skill-tag" style="font-size: 0.95rem; padding: 0.5rem 1rem;">Inventory Management</span>
+      <div class="skills-grid">
+        <!-- Skill 1: Microsoft Excel -->
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="3" y1="15" x2="21" y2="15"/>
+              <line x1="9" y1="3" x2="9" y2="21"/>
+              <line x1="15" y1="3" x2="15" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">Microsoft Excel</h3>
+          <p class="skill-description">Spreadsheet management, formula analysis, and structured data tracking.</p>
+        </div>
+
+        <!-- Skill 2: Troubleshooting -->
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">Troubleshooting</h3>
+          <p class="skill-description">Technical problem-solving and diagnosing hardware, software, and systems issues.</p>
+        </div>
+
+        <!-- Skill 3: Customer Service -->
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">Customer Service</h3>
+          <p class="skill-description">Attentive client assistance, clear communication, and reliable in-person service.</p>
+        </div>
+
+        <!-- Skill 4: Inventory Management -->
+        <div class="skill-card">
+          <div class="skill-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="skill-title">Inventory Management</h3>
+          <p class="skill-description">Stock tracking, retail organization, and maintaining accurate product availability.</p>
         </div>
       </div>
     </section>
@@ -68,20 +141,63 @@
         <p class="section-subtitle">Professional work and retail operations background.</p>
       </div>
 
-      <div class="card experience-list">
-        <!-- Experience Item -->
+      <div class="experience-card">
         <article class="experience-item">
-          <div class="experience-header">
-            <h3 class="experience-role">Sales Associate</h3>
+          <div class="experience-header-block">
+            <div class="experience-role-group">
+              <h3 class="experience-role">Sales Associate</h3>
+              <p class="experience-org">Precision Firearms &amp; Indoor Range</p>
+            </div>
+            <span class="experience-status-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              Retail &amp; Facility Operations
+            </span>
           </div>
-          <p class="experience-org">Precision Firearms &amp; Indoor Range</p>
+
           <ul class="experience-bullets">
-            <li>Operate the register and assist customers with prompt, attentive service.</li>
-            <li>Help manage and organize inventory to maintain accurate stock and availability.</li>
-            <li>Perform daily opening and closing responsibilities to support smooth facility operations.</li>
-            <li>Help maintain the range and facility to uphold safety and operational standards.</li>
-            <li>Provide customers with accurate, helpful information on products and range services.</li>
+            <li class="experience-bullet-item">
+              <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Operate the register and assist customers with prompt, attentive service.</span>
+            </li>
+            <li class="experience-bullet-item">
+              <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Help manage and organize inventory to maintain accurate stock and availability.</span>
+            </li>
+            <li class="experience-bullet-item">
+              <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Perform daily opening and closing responsibilities to support smooth facility operations.</span>
+            </li>
+            <li class="experience-bullet-item">
+              <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Help maintain the range and facility to uphold safety and operational standards.</span>
+            </li>
+            <li class="experience-bullet-item">
+              <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Provide customers with accurate, helpful information on products and range services.</span>
+            </li>
           </ul>
+
+          <div class="experience-card-footer">
+            <a href="resume.html" class="btn btn-secondary btn-sm">
+              View on Resume
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
         </article>
       </div>
     </section>
@@ -93,11 +209,26 @@
         <p class="section-subtitle">Feel free to reach out directly regarding career opportunities, projects, or questions.</p>
       </div>
 
-      <div class="contact-grid" style="max-width: 480px;">
-        <!-- Contact Card: Email -->
-        <a href="mailto:canzonire11@gmail.com" class="contact-card">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">canzonire11@gmail.com</span>
+      <div class="contact-featured-card">
+        <div class="contact-info-block">
+          <div class="contact-icon-large">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="contact-text-group">
+            <span class="contact-label">Direct Email</span>
+            <a href="mailto:canzonire11@gmail.com" class="contact-email-link">canzonire11@gmail.com</a>
+          </div>
+        </div>
+
+        <a href="mailto:canzonire11@gmail.com" class="contact-cta-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Send Email
         </a>
       </div>
     </section>
